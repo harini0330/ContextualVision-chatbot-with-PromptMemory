@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Image Chatbot</h2>
+                <button id="new-chat-btn" class="new-chat-button">
+                    <i class="fas fa-plus"></i> New Chat
+                </button>
+            </div>
+            <div id="chat-list" class="chat-list"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="theme-toggle-container">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            
+            <!-- Header with tabs -->
+            <div class="content-header">
+                <div class="tab-nav">
+                    <a href="/" class="tab-button">Home</a>
+                    <button id="chat-tab-btn" class="tab-button active">Chat</button>
+                    <button id="analysis-tab-btn" class="tab-button">Analysis</button>
+                    <button id="image-tab-btn" class="tab-button">Uploaded Image</button>
+                </div>
+            </div>
+
+            <!-- Chat Container -->
+            <div id="chat-container" class="chat-container">
+                <div id="chat-messages" class="chat-messages"></div>
+                
+                <div id="image-upload-container" class="image-upload-container">
+                    <div class="upload-prompt">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Upload an image to start the conversation</p>
+                        <input type="file" id="image-upload" accept="image/*">
+                        <button id="choose-image-btn" class="choose-image-btn">Choose Image</button>
+                        <div id="preview-container"></div>
+                        <button id="upload-btn" class="analyze-btn" disabled>Analyze Image</button>
+                    </div>
+                </div>
+                
+                <div id="chat-input-container" class="chat-input-container">
+                    <textarea id="user-input" placeholder="Ask a question about the image..." disabled></textarea>
+                    <button id="send-btn" class="send-button" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Analysis Container -->
+            <div id="analysis-container" class="analysis-container hidden">
+                <div class="analysis-content-wrapper">
+                    <h3>Image Analysis</h3>
+                    <div id="analysis-content" class="analysis-content"></div>
+                </div>
+            </div>
+
+            <!-- Add this after the analysis container -->
+            <div id="image-view-container" class="image-view-container">
+                <div class="centered-image-wrapper">
+                    <img id="centered-image-preview" src="" alt="Uploaded image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Preview Sidebar -->
+        <div id="image-preview-container" class="image-sidebar hidden">
+            <h3>Uploaded Image</h3>
+            <div class="image-wrapper">
+                <img id="image-preview" src="" alt="Uploaded image">
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/js/script.js"></script>
+
+    <!-- Add this right before the closing body tag -->
+    <div id="analysis-loading" class="analysis-loading">
+        <div class="spinner"></div>
+        <div class="analysis-text">Analyzing your image...</div>
+        <div class="analysis-progress">
+            <div class="analysis-progress-bar"></div>
+        </div>
+    </div>
+</body>
+</html> 

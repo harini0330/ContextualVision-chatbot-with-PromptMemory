@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision AI - Image Analysis Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+    <div class="home-container">
+        <!-- Animated background elements -->
+        <div class="animated-background">
+            <div class="animated-dot"></div>
+            <div class="animated-dot"></div>
+            <div class="animated-dot"></div>
+            <div class="animated-dot"></div>
+            <div class="animated-dot"></div>
+        </div>
+        
+        <!-- Particle network -->
+        <div class="particle-network">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-elements">
+            <div class="floating-circle circle1"></div>
+            <div class="floating-circle circle2"></div>
+            <div class="floating-circle circle3"></div>
+            <div class="floating-line line1"></div>
+            <div class="floating-line line2"></div>
+            <div class="floating-line line3"></div>
+            <div class="scanner-circle"></div>
+        </div>
+        
+        <!-- Gradient overlay -->
+        <div class="gradient-overlay"></div>
+        
+        <!-- Main content area -->
+        <div class="main-content-area">
+            <div class="hero-title-container">
+                <h1 class="hero-title">
+                    <span class="vision-text">Vision</span> <span class="ai-text">AI</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Analyze images with advanced AI and chat about what you see. Get detailed insights and answers to your visual questions.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Image Analysis</h3>
+                    <p>Upload any image and get detailed AI-powered analysis of its content, objects, and context.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Interactive Chat</h3>
+                    <p>Ask questions about your images and get intelligent responses based on what the AI sees.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Advanced AI</h3>
+                    <p>Powered by state-of-the-art vision models that understand complex visual information.</p>
+                </div>
+            </div>
+            
+            <a href="/app" class="cta-button">
+                <i class="fas fa-rocket"></i> Launch App
+            </a>
+        </div>
+        
+        <!-- Image placeholders -->
+        <div class="image-placeholders">
+            <div class="image-placeholder img1">
+                <i class="fas fa-image"></i>
+            </div>
+            <div class="image-placeholder img2">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="image-placeholder img3">
+                <i class="fas fa-photo-film"></i>
+            </div>
+        </div>
+        
+        <!-- Wave container -->
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(100, 102, 241, 0.1)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(100, 102, 241, 0.07)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(100, 102, 241, 0.05)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(100, 102, 241, 0.03)" />
+                </g>
+            </svg>
+        </div>
+        
+        <!-- Theme toggle -->
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script src="/static/js/home.js"></script>
+</body>
+</html> 
