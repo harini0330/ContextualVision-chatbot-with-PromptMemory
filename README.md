@@ -40,20 +40,7 @@ Unlike conventional chatbots that forget after a prompt, this system **remembers
 
 
 
----
 
-## 🧱 System Architecture
-![image](https://github.com/user-attachments/assets/8d91880a-35e1-44c7-b789-29b653574412)
-
-
----
-
-## 🔄 Workflow
-
-![image](https://github.com/user-attachments/assets/deff3f8e-afcf-4c09-9713-096709670201)
-
-
----
 
 ## 🛠️ Technologies Used
 
