@@ -26,25 +26,32 @@ Unlike conventional chatbots that forget after a prompt, this system **remembers
 
 ## 📸 Screenshots
 
-> _Add your screenshots here to visually demonstrate chat interactions and UI._
+- Home Interface
+![image](https://github.com/user-attachments/assets/8506a550-9d77-4a16-a13a-f857a9e1a3c7)
+
+- Chat Interface
+![image](https://github.com/user-attachments/assets/7c296bec-72a3-4960-a547-65a408a6d57b)
+
+- Analyis of image
+![image](https://github.com/user-attachments/assets/48226e4e-bbda-47f5-bb24-5c4870961ac9)
+
+- Uploaded image View
+![image](https://github.com/user-attachments/assets/2db472db-4b22-46e8-b537-610c3af18644)
 
 
 
 ---
 
 ## 🧱 System Architecture
+![image](https://github.com/user-attachments/assets/8d91880a-35e1-44c7-b789-29b653574412)
 
-> _Include your architecture diagram here (e.g., FastAPI layers, session memory, LLM interface, frontend UI interactions)._
-
-![Architecture Diagram](screens/architecture-diagram.png)
 
 ---
 
 ## 🔄 Workflow
 
-> _Add your end-to-end system flow diagram here._
+![image](https://github.com/user-attachments/assets/deff3f8e-afcf-4c09-9713-096709670201)
 
-![Workflow](screens/workflow.png)
 
 ---
 
